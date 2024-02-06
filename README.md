@@ -12,15 +12,6 @@ In your favourite directory, run `git clone https://github.com/6192-sp24/lab0.gi
 
 Make sure to follow the instructions in Installation.md before continuing.
 
-### Running the code test
-
-Do the following
-
-`cd getting_started`
-
-`make`
-
-`./start`
 
 ## Important Resources
 Do you have access to these?
