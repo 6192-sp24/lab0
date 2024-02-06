@@ -4,6 +4,24 @@ Welcome to 6.192! This lab is mainly meant to help you setup your local Bluespec
 
 In 6.191, you would have used an Athena locker, but here we ask that you install locally. We've tried to keep it simple, but please ask on Piazza or come to office hours if you have any trouble.
 
+## Downloading this repository
+
+For linux/WSL users, make sure you have git installed -- i.e. `sudo apt-get installed git`. It *should* be preinstalled on Mac OS X if I remember correctly.
+
+In your favourite directory, run `git clone https://github.com/6192-sp24/lab0.git`. Now you can do `cd lab0` to access the lab.
+
+Make sure to follow the instructions in Installation.md before continuing.
+
+### Running the code test
+
+Do the following
+
+`cd getting_started`
+
+`make`
+
+`./start`
+
 ## Important Resources
 Do you have access to these?
 - [Canvas](https://canvas.mit.edu/courses/25337)
