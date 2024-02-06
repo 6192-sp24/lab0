@@ -18,7 +18,7 @@ Where <OS> could be "debian-10.13", "debian-11.7", "debian-12.1", "macos-11", "m
 
 If you don't know what flavor of Linux you're on, but know that you're probably on some Linux-type thing, try the `lsb_release` command and see if it matches one of the available installations.
 
-If you're unfamiliar with downloading through the command line, you can use `wget` with the file link, e.g., `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-ubuntu-20.04.tar.gz`. A `tar.gz` is a tar ball, or a kind of compressed file, like a `.zip`, which we extract in the next step.
+If you're unfamiliar with downloading through the command line, you can use `wget` with the file link, e.g., `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-ubuntu-20.04.tar.gz` for Ubuntu 20.04 or `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-debian-12.1.tar.gz` for Debian 12.1. A `tar.gz` is a tar ball, or a kind of compressed file, like a `.zip`, which we extract in the next step.
 
 
 
