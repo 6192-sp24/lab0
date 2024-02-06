@@ -10,6 +10,8 @@ For linux/WSL users, make sure you have git installed -- i.e. `sudo apt-get inst
 
 In your favourite directory, run `git clone https://github.com/6192-sp24/lab0.git`. Now you can do `cd lab0` to access the lab.
 
+For WSL users -- you should be able to see the Linux home directory files in Windows File Explorer under the Linux tab on the left pane.
+
 Make sure to follow the instructions in Installation.md before continuing.
 
 
