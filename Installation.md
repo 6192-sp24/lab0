@@ -68,6 +68,10 @@ export PATH=/usr/local/bsc/bin:$PATH
 
 ```
 
+After you add that to `~/.bashrc`, run `source ~/.bashrc` to update your path.
+
+You may also need `sudo apt-get install libtcl8.6 make build-essential` if they are not installed to compile labs.
+
 ## Installation Method 2 -- Second easy one -- To run BSC in the docker
 
 We provide the following docker file. Both links lead to the same file.
