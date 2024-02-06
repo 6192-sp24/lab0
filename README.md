@@ -108,3 +108,5 @@ We're trying to keep the content both accessible (so not too hard) and engaging 
 
 This week, I'd like you to spend some time filling out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdPQ_XcBIVkmnK4cQa86ulicTaHfWIx9burw7mLKrnEC2l0vg/viewform?usp=sf_link).
 
+---
+`version: 0`
