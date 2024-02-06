@@ -7,7 +7,7 @@ There are ready-to-go installations for several operating systems on x86_64. You
 
 Note for Apple users: This method depends on your computer using an x86_64 architecture, which covers most students' computers but excludes Apple's recent ARM-based M1/M2/M3 chips. If you use a non-x86_64 architecture, try installing from source (Installation Method 3). I promise it will be fine.
 
-Note for Windows users: If you use Windows you're probably on an x86_64 architecture. We recommend using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). The default distribution is Ubuntu-20.04, which is compatible with this method.
+Note for Windows users: If you use Windows you're probably on an x86_64 architecture. We recommend using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). It is preferred to use the WSL-2 setup if applicable. The default distribution is Ubuntu-20.04, which is compatible with this method.
 
 Note for Linux/other users: Enter `arch` to see what architecture you're on. It should say `x86_64` unless you're on a Raspberry Pi or something funny.
 
@@ -18,9 +18,9 @@ Where <OS> could be "debian-10.13", "debian-11.7", "debian-12.1", "macos-11", "m
 
 If you don't know what flavor of Linux you're on, but know that you're probably on some Linux-type thing, try the `lsb_release` command and see if it matches one of the available installations.
 
-A good place to put your installation for WSL/Linux is `/usr/local/`. To get there, do `cd /usr/local`. 
-
 If you're unfamiliar with downloading through the command line, you can use `wget` with the file link, e.g., `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-ubuntu-20.04.tar.gz`. A `tar.gz` is a tar ball, or a kind of compressed file, like a `.zip`, which we extract in the next step.
+
+
 
 ### Step 2: Decompress the tar ball
 
@@ -44,12 +44,15 @@ e.g.,
 
 `mv bsc-2023.07-<OS> bsc`
 
+A good place to put your installation for WSL/Linux is `/usr/local/`. To get there, do `cd /usr/local`. 
+To install it, you can move the bsc folder to the place of your choice. e.g. `sudo mv bsc /usr/local`.
+
 ### Step 3: Setup PATH for running bsc
 This step is important so that you can call `bsc` from anywhere in your file system, not just the one where the installation is.
 
 You just need to add the path of `bsc` to your `PATH` environment variable. `PATH` holds the paths of your command line programs. When you call a program, e.g., `bsc` or `cd` or something, your terminal walks through the `PATH` variable looking for the program.
 
-If you're using WSL/Linux, put this line in your `~/.profile` file, e.g., with `nano ~/.profile`. Some other systems use a different file, e.g., `~/.bashrc`. Let us know if you have any trouble with it.
+If you're using WSL/Linux, put this line in your `~/.bashrc` file, e.g., with `nano ~/.bashrc` (add to the bottom). Some other systems use a different file, e.g., `~/.profile`. Let us know if you have any trouble with it.
 
 ```
 export PATH=<PathToYourBSC>/bsc/bin:$PATH
