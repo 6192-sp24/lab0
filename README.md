@@ -32,9 +32,9 @@ As you may recall from Lec 01, the BSC converts your human-readable BSV into two
 
 Right now, there should be only two files in the directory. You can ignore the `Makefile` for now; let's focus on the `start.bsv`. It's a simple Bluespec module that is just meant to let you play with `bsc`. Take a brief look into it and try to understand what it does.
 
-Now let's build it into something we can run. See `bsc --help` for some of the options. It has a lot more information than we need to focus on right now, but scroll up to the `Usage` section.
+Now let's build it into something the machine can understand. Run and look at `bsc --help` for some of the options. It has a lot more information than we need to focus on right now, but scroll up to the `Usage` section.
 
-You'll see there are two large groups of options to use with `bsc`: `-verilog` and `-sim`. These represent the two main targets we can compile to: Verilog files, which we can use to generate hardware or simulate using industry-standard Verilog tools like Verilator, or Bluesim files, which we can simulate to better debug our hardware. You may recall from lecture that these should be cycle-accurate.
+You'll see there are two large groups of options to use with `bsc`: `-verilog` and `-sim`. These represent the two main targets we can compile to: Verilog files, which we can use to generate hardware or simulate using industry-standard Verilog tools like Verilator, or Bluesim files, which we can (more quickly) simulate to better debug our hardware. You may recall from lecture that these are designed to be cycle-accurate. This property is important because in hardware design, we want to use the simulation to debug the hardware (i.e., Verilog).
 
 For most of this class, we'll be relying on the Bluesim files, but the Verilog target is what's necessary to deploy Bluespec onto hardware like FPGAs or ASICs. Right now, we're using `bsc -sim`.
 
@@ -104,7 +104,7 @@ And of course you're always welcome to post (or answer!) questions on Piazza or 
 ## Feedback Survey
 This is the second time we've offered the class since 6.191 started using Minispec for their labs. This class was offered last year, but before that was in 2017.
 
-We're trying to keep the content both accessible (so not too hard) and interesting (so not too easy) and we'd like your help to achieve that balance. After every assignment we will have a short feedback form. Some changes we'll be able to implement this semester, but others will help us improve the class for later semesters.
+We're trying to keep the content both accessible (so not too hard) and engaging (so not too easy) and we'd like your help to achieve that balance. After every assignment we will have a feedback form. Some changes we'll be able to implement this semester, but others will help us improve the class for later semesters. These surveys will also be opportunities for you to give feedback on lectures, recitations, etc.
 
 This week, I'd like you to spend some time filling out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdPQ_XcBIVkmnK4cQa86ulicTaHfWIx9burw7mLKrnEC2l0vg/viewform?usp=sf_link).
 
