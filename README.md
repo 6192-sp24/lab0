@@ -106,7 +106,7 @@ This is the second time we've offered the class since 6.191 started using Minisp
 
 We're trying to keep the content both accessible (so not too hard) and engaging (so not too easy) and we'd like your help to achieve that balance. After every assignment we will have a feedback form. Some changes we'll be able to implement this semester, but others will help us improve the class for later semesters. These surveys will also be opportunities for you to give feedback on lectures, recitations, etc.
 
-This week, I'd like you to spend some time filling out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdPQ_XcBIVkmnK4cQa86ulicTaHfWIx9burw7mLKrnEC2l0vg/viewform?usp=sf_link).
+This week, I'd like you to spend some time filling out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSdPQ_XcBIVkmnK4cQa86ulicTaHfWIx9burw7mLKrnEC2l0vg/viewform?usp=sf_link). We really appreciate your help!
 
 ---
 `version: 0`
