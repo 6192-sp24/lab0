@@ -1,11 +1,9 @@
 # BSC Installation Methods
 
 
-## Installation Method 1 -- The easiest -- use prebuilt image (for x86_64 -- 64bit Intel/AMD)
+## Installation Method 1 -- The easiest -- use prebuilt image (for x86_64 -- 64bit Intel/AMD; also for Mac with M1/M2/M3)
 
-There are ready-to-go installations for several operating systems on x86_64. You can simply download, extract, and use.
-
-Note for Apple users: This method depends on your computer using an x86_64 architecture, which covers most students' computers but excludes Apple's recent ARM-based M1/M2/M3 chips. If you use a non-x86_64 architecture, try installing from source (Installation Method 3). I promise it will be fine.
+There are ready-to-go installations for several operating systems on x86_64 and ARM. You can simply download, extract, and use.
 
 Note for Windows users: If you use Windows you're probably on an x86_64 architecture. We recommend using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). It is preferred to use the WSL-2 setup if applicable. The default distribution is Ubuntu-20.04, which is compatible with this method. Debian 12 will also work.
 
@@ -13,6 +11,7 @@ Note for Linux/other users: Enter `arch` to see what architecture you're on. It 
 
 ### Step 1: Download Prebuilt Image
 - Go to https://github.com/B-Lang-org/bsc/releases/tag/2023.07
+##### 1.1 For X86_64 based machines
 - Download bsc-2023.07-<OS>.tar.gz
 Where <OS> could be "debian-10.13", "debian-11.7", "debian-12.1", "macos-11", "macos-12", "macos-13", "ubuntu-18.04", "ubuntu-20.04", "ubuntu-22.04", depending on what operating system you're using.
 
@@ -20,8 +19,10 @@ If you don't know what flavor of Linux you're on, but know that you're probably 
 
 If you're unfamiliar with downloading through the command line, you can use `wget` with the file link, e.g., `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-ubuntu-20.04.tar.gz` for Ubuntu 20.04 or `wget https://github.com/B-Lang-org/bsc/releases/download/2023.07/bsc-2023.07-debian-12.1.tar.gz` for Debian 12.1. A `tar.gz` is a tar ball, or a kind of compressed file, like a `.zip`, which we extract in the next step.
 
-Note: for Intel Macs only, the link would be something like `wget bsc-2023.07-macos-13.tar.gz`
+As for Intel Macs, the link would be something like `wget bsc-2023.07-macos-13.tar.gz`
 
+##### 1.2 For ARM based machine, like Mac with M1/M2/M3
+Please download the prebuilt docker for Mac with apple silicon: `https://drive.google.com/file/d/1QefJbMz-Zbru9X6LKHtmT8gL8fjC4X_U/view?usp=sharing` or `https://www.dropbox.com/scl/fi/abiks4nk61hxmp6yoq06c/bsc_arm_ubuntu2204.tar?rlkey=onqkpazk300j69zvavy6nhdko&dl=0`
 
 
 ### Step 2: Decompress the tar ball
@@ -102,7 +103,7 @@ Which step 1 you use depends on your OS. This can be a little tricky, so feel fr
 ### Step 1a (MacOS only): Install Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install autoconf gmp
+brew install autoconf gmp pkgconfig
 
 ```
 
