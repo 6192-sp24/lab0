@@ -94,6 +94,12 @@ If you'd like to read more into how the toolchain works, check out Chapter 2 of 
 
 ## Other Helpful Resources
 
+### Tutorials
+Some people have written Bluespec tutorials:
+
+- [Kathy Camenzind's Bluespec Intro Guide](https://github.com/kcamenzind/BluespecIntroGuide) was originally written in 2018 for when 6.004 (now 6.191) was transitioning to Bluespec. It contains a pretty comprehensive overview of Bluespec features that you might like to know.
+- [Rishiyur Nikhil's and Kathy Czeck's BSV by Example](http://csg.csail.mit.edu/6.S078/6_S078_2012_www/resources/bsv_by_example.pdf) was written much longer ago by one of the cofounders of Bluespec, and serves as good reading material for understanding Bluespec.
+
 ### Documentation
 If you need help with Bluespec or would like to read more about it, please check out these [documents](https://github.com/B-Lang-org/bsc#Documentation) maintained by the Bluespec Language organization. You may not need them yet, but you should remember that they're available.
 
