@@ -22,7 +22,7 @@ If you're unfamiliar with downloading through the command line, you can use `wge
 As for Intel Macs, the link would be something like `wget bsc-2023.07-macos-13.tar.gz`
 
 ##### 1.2 For ARM based machine, like Mac with M1/M2/M3
-Please download the prebuilt docker for Mac with apple silicon: `https://drive.google.com/file/d/1QefJbMz-Zbru9X6LKHtmT8gL8fjC4X_U/view?usp=sharing` or `https://www.dropbox.com/scl/fi/abiks4nk61hxmp6yoq06c/bsc_arm_ubuntu2204.tar?rlkey=onqkpazk300j69zvavy6nhdko&dl=0`
+Please download the prebuilt docker for Mac with apple silicon: `https://www.dropbox.com/scl/fi/abiks4nk61hxmp6yoq06c/bsc_arm_ubuntu2204.tar?rlkey=onqkpazk300j69zvavy6nhdko&dl=0`
 
 
 ### Step 2: Decompress the tar ball
