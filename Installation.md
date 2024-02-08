@@ -27,8 +27,12 @@ Please download the prebuilt docker for Mac with apple silicon: `https://www.dro
 
 ### Step 2: Decompress the tar ball
 
-This step gets the good stuff out of the compressed file, extracting the files into a folder the same name as your tar ball.
+Install the git before downloading the repo
+```bash
+apt install git
+```
 
+This step gets the good stuff out of the compressed file, extracting the files into a folder the same name as your tar ball.
 ```
 tar -xvf bsc-2023.07-<OS>.tar.gz
 ```
@@ -99,6 +103,11 @@ This is the newest method, so if anything is missing then post to Piazza or come
 ## Installation Method 3 -- Built from source -- MAC (ARM-based M1/M2/M3) or Linux/WSL
 
 Which step 1 you use depends on your OS. This can be a little tricky, so feel free to do this in office hours.
+
+For linux or WSL users, please install the following dependency
+```
+apt-get install tcl-dev build-essential pkg-config autoconf gperf flex bison iverilog ghc-prof libghc-regex-compat-prof libghc-syb-prof libghc-old-time-prof libghc-split-prof ghc libghc-regex-compat-dev libghc-syb-dev libghc-old-time-dev libghc-split-dev
+```
 
 ### Step 1a (MacOS only): Install Homebrew
 ```
