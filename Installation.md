@@ -138,7 +138,7 @@ git clone --recursive https://github.com/B-Lang-org/bsc
 
 # Build the bluespec compiler
 cd bsc
-make release
+make install-src
 
 # You might get error when it comes to compilation of the documentation or other secondary build targets. This is not an issue for the class. You may also have to install additional libaries as required by error output.
 # To make sure the build succeeded call:
