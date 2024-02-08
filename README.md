@@ -30,7 +30,6 @@ Bluespec is a compiled language, which means you need a compiler to turn your Bl
 We have prepared [instructions](/Installation.md) for the most common operating systems (Linux, macOS, Windows).
 - If you use an `x86_64`-based processor and a semi-common operating system, it should be a straightforward process of downloading and extracting a prebuilt binary and adding it to your `PATH` environment variable.
 - If you use a less common operating system but still use an `x86_64`-based processor, we have prepared a Docker image that should work.
-- If you use an ARM-based processor (like the recent Apple M-series chips), then we currently ask that you build BSC from source. We've included instructions for that too.
 
 If these don't work, please come see us in office hours.
 
