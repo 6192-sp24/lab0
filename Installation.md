@@ -94,10 +94,12 @@ Follow the instructions guideline [here](https://docs.docker.com/engine/install/
 
 Run the following command to launch the docker
 ```
-sudo docker load -i bsc_docker.tar
-sudo docker run -it bsc_docker:latest
+sudo docker load -i <docker_tarball_name>.tar
+sudo docker run -it <docker_tarball_name>:latest
 ```
 
+As for X86_64: <docker_tarball_name> = bsc_docker 
+As for Apple Silicon <docker_tarball_name> = bsc_arm_ubuntu2204
 This is the newest method, so if anything is missing then post to Piazza or come to Jianming's OH.
 
 ## Installation Method 3 -- Built from source -- MAC (ARM-based M1/M2/M3) or Linux/WSL
@@ -138,7 +140,7 @@ git clone --recursive https://github.com/B-Lang-org/bsc
 
 # Build the bluespec compiler
 cd bsc
-make install-src
+make release
 
 # You might get error when it comes to compilation of the documentation or other secondary build targets. This is not an issue for the class. You may also have to install additional libaries as required by error output.
 # To make sure the build succeeded call:
