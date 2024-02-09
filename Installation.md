@@ -65,6 +65,8 @@ e.g.,
 ```
 export PATH=/usr/local/bsc/bin:$PATH
 
+export PATH=/usr/local/bsc/inst/bin:$PATH  (for ARM Macs)
+
 # or if you had not renamed it...
 
 export PATH=/usr/local/bsc-2023.07-<OS>/bin:$PATH
