@@ -10,7 +10,7 @@ Note for Windows users: If you use Windows you're probably on an x86_64 architec
 Note for Linux/other users: Enter `arch` to see what architecture you're on. It should say `x86_64` unless you're on a Raspberry Pi or something funny.
 
 ### Step 1: Download Prebuilt Image
-- Go to https://github.com/B-Lang-org/bsc/releases/tag/2023.07
+- Go to https://github.com/B-Lang-org/bsc/releases/tag/2023.07 (for ARM64/M1/2/etc Mac https://drive.google.com/file/d/1YC-oLBo9XCXHUuYJSUBrOGV5Topj59H-/view?usp=sharing)
 ##### 1.1 For X86_64 based machines
 - Download bsc-2023.07-<OS>.tar.gz
 Where <OS> could be "debian-10.13", "debian-11.7", "debian-12.1", "macos-11", "macos-12", "macos-13", "ubuntu-18.04", "ubuntu-20.04", "ubuntu-22.04", depending on what operating system you're using.
@@ -21,9 +21,8 @@ If you're unfamiliar with downloading through the command line, you can use `wge
 
 As for Intel Macs, the link would be something like `wget bsc-2023.07-macos-13.tar.gz`
 
-##### 1.2 For ARM based machine, like Mac with M1/M2/M3
-Please download the prebuilt docker for Mac with apple silicon: `https://www.dropbox.com/scl/fi/abiks4nk61hxmp6yoq06c/bsc_arm_ubuntu2204.tar?rlkey=onqkpazk300j69zvavy6nhdko&dl=0`
-
+##### 1.2 For ARM64 based machine, like Mac with M1/M2/M3
+Please download the prebuilt binary from https://drive.google.com/file/d/1YC-oLBo9XCXHUuYJSUBrOGV5Topj59H-/view?usp=sharing
 
 ### Step 2: Decompress the tar ball
 
@@ -35,6 +34,7 @@ apt install git
 This step gets the good stuff out of the compressed file, extracting the files into a folder the same name as your tar ball.
 ```
 tar -xvf bsc-2023.07-<OS>.tar.gz
+tar -vxf bsc_compiled_mac_arm64.tar (ARM Mac)
 ```
 
 where the flags after `-`: `x` means e**x**tract, `v` means **v**erbose, and `f` means the next argument is the **f**ile we're trying to work with.
@@ -49,7 +49,7 @@ And you can rename the folder if you want, to something like just `bsc`.
 
 e.g.,
 
-`mv bsc-2023.07-<OS> bsc`
+`mv bsc-2023.07-<OS> bsc` (already renamed in the arm mac version)
 
 A good place to put your installation for WSL/Linux is `/usr/local/`. To get there, do `cd /usr/local`. 
 To install it, you can move the bsc folder to the place of your choice. We recommend the default. e.g. `sudo mv bsc /usr/local`.
@@ -61,23 +61,23 @@ You just need to add the path of `bsc` to your `PATH` environment variable. `PAT
 
 If you're using WSL/Linux, put this line in your `~/.bashrc` file, e.g., with `nano ~/.bashrc` (add to the bottom). Some other systems use a different file, e.g., `~/.profile` (e.g. Macs probably). Let us know if you have any trouble with it.
 
-```
-export PATH=<PathToYourBSC>/bsc/bin:$PATH
-```
-
 e.g.,
 ```
 export PATH=/usr/local/bsc/bin:$PATH
 
 # or if you had not renamed it...
 
-```
 export PATH=/usr/local/bsc-2023.07-<OS>/bin:$PATH
+```
 
 
 After you add that to `~/.bashrc`, run `source ~/.bashrc` to update your path.
 
 Debian/Ubuntu users: You may also need `sudo apt-get install libtcl8.6 make build-essential` if they are not installed to compile labs. You may need `sudo apt-get update` before. 
+
+You can now run `bsc` on your computer. This is the bluespec compiler.
+
+For modern Macs... you might get a secutity issue. Follow https://support.apple.com/en-us/HT202491 for each error running `bsc` gives.
 
 ## Installation Method 2 -- Second easy one -- To run BSC in the docker
 
