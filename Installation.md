@@ -79,7 +79,7 @@ Debian/Ubuntu users: You may also need `sudo apt-get install libtcl8.6 make buil
 
 You can now run `bsc` on your computer. This is the bluespec compiler.
 
-For modern Macs... you might get a secutity issue. Follow https://support.apple.com/en-us/HT202491 for each error running `bsc` gives.
+For modern Macs... you might get a secutity issue. Follow https://support.apple.com/en-us/HT202491 for each error running `bsc` gives (should be 3 times roughly). I.e. run `bsc`, if there is an error press open, then when it fails go to Privacy & Security in settings and press open anyway at the bottom for the errored app. Repeat a few times until no errors are given and the usage is displayed instead.
 
 ## Installation Method 2 -- Second easy one -- To run BSC in the docker
 
