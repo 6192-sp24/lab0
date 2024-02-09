@@ -89,6 +89,8 @@ Dropbox: https://www.dropbox.com/s/byfn7nczfqoy82r/bsc_docker.tar?dl=0
 
 (Mirror) Google Drive: https://drive.google.com/file/d/1DwgVHowVWBOl5fUQCiYtHrQtu9PbODas/view?usp=sharing
 
+For ARM M1/M2/M3 Macs: https://www.dropbox.com/scl/fi/abiks4nk61hxmp6yoq06c/bsc_arm_ubuntu2204.tar?rlkey=onqkpazk300j69zvavy6nhdko&dl=0
+
 ### Step 1: Docker installation
 Follow the instructions guideline [here](https://docs.docker.com/engine/install/) to install docker on Window/Linux/Mac
 
