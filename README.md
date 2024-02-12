@@ -6,7 +6,7 @@ In 6.191, you would have used an Athena locker, but here we ask that you install
 
 ## Downloading this repository
 
-For linux/WSL users, make sure you have git installed -- i.e. `sudo apt-get installed git`. It *should* be preinstalled on Mac OS X if I remember correctly.
+For linux/WSL users, make sure you have git installed -- i.e. `sudo apt-get install git`. It *should* be preinstalled on Mac OS X if I remember correctly.
 
 In your favourite directory, run `git clone https://github.com/6192-sp24/lab0.git`. Now you can do `cd lab0` to access the lab.
 
