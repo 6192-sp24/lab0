@@ -81,6 +81,9 @@ You can now run `bsc` on your computer. This is the bluespec compiler.
 
 For modern Macs... you might get a secutity issue. Follow https://support.apple.com/en-us/HT202491 for each error running `bsc` gives (should be 3 times roughly). I.e. run `bsc`, if there is an error press open, then when it fails go to Privacy & Security in settings and press open anyway at the bottom for the errored app. Repeat a few times until no errors are given and the usage is displayed instead.
 
+**NOTE:** When trying to compile bsc files using the terminal within VS Code on arm Mac you may get an error similar to `linker exit code: 1`. This error has
+to do directly with running the intel x86 version of VS Code on an arm Mac. Running the compile commands directly in the Mac terminal or installing the arm version of VS Code will fix this.
+
 ## Installation Method 2 -- Second easy one -- To run BSC in the docker
 
 We provide the following docker file. Both links lead to the same file.
