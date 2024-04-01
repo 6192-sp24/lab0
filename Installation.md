@@ -174,6 +174,7 @@ Enjoy! XD
 This isn't strictly installed, but you just need a ssh client (e.g. Putty on Windows, or built in on most Linux and Macs machines). This is provided in the 6.004 locker
 
 ```
+add 6.004
 ssh <kerb>@athena.dialup.mit.edu
 source /mit/6.004/setup.sh
 bsc # this should show bluespec compiler help
