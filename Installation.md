@@ -171,17 +171,18 @@ Enjoy! XD
 
 ## Installation method 4 -- Athena (if all else fails)
 
-This isn't strictly installed, but you just need a ssh client (e.g. Putty on Windows, or built in on most Linux and Macs machines). This is provided in the 6.004 locker
+This isn't strictly installed, but you just need a ssh client (e.g. Putty on Windows, or built in on most Linux and Macs machines). This is provided in the 6.004 locker.
 
 ```
-add 6.004
 ssh <kerb>@athena.dialup.mit.edu
+add 6.004
 source /mit/6.004/setup.sh
 bsc # this should show bluespec compiler help
 git clone <your repo>
 cd <repo>
 make # or whatever specific build instructions are needed
 ```
+You can add lines 2 and 3 to your `.bashrc` if you don't want to have to keep reloading it on login.
 
 ## Appendix: Other Libraries
 Bluespec doesn't yet have a library system system for libraries outside of the standard library. Instead, they are held in the [bsc-contrib repository](https://github.com/B-Lang-org/bsc-contrib). I don't expect you'll need this unless you're building for FPGA.
